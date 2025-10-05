@@ -2,13 +2,15 @@
   "name": "bloom-minds-explorer",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:predict": "node test-prediction.js"
   },
   "dependencies": {
     "lucide-react": "^0.454.0",
